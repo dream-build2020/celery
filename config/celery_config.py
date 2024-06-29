@@ -14,7 +14,7 @@ CELERY_IMPORTS = (  # 指定导入的任务模块
 CELERTBEAT_SCHEDULE = {
     'add-every-30-seconds': {
         'task':  'tasks.tasks.task1',
-        'schedule': timedelta(seconds=30),
+        'schedule': crontab(minute=1),
         'kwargs': {'a': 1, 'b': 2}
     }
 }
