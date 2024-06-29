@@ -5,5 +5,5 @@ CELERY_TIMEZONE = 'Asia/Shanghai'  # 指定时区，默认是 UTC
 # CELERY_TIMEZONE='UTC'
 
 CELERY_IMPORTS = (  # 指定导入的任务模块
-    'tasks.task1',
+    'tasks.task',
 )
