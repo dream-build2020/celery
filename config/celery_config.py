@@ -16,5 +16,10 @@ CELERTBEAT_SCHEDULE = {
         'task':  'tasks.tasks.task1',
         'schedule': crontab(minute=1),
         'kwargs': {'a': 1, 'b': 2}
+    },
+    'add-every-1-minute': {
+        'task': 'tasks.tasks.task1',
+        'schedule': crontab(minute=2),
+        'args': [13, 2]
     }
 }
