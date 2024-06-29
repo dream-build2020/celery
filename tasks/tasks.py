@@ -1,4 +1,4 @@
-from config.celery_config import celery_app
+from config import celery_app
 
 
 class Tasks:
