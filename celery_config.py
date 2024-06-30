@@ -17,6 +17,6 @@ celery_app.conf.beat_schedule = {
     'add-every-1-minute': {
         'task': 'tasks.tasks.task1',
         'schedule': crontab(minute="*/1"),
-        'arg': (1, 2)
+        'args': (1 ,3)
     }
 }
