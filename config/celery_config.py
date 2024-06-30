@@ -13,7 +13,7 @@ CELERY_IMPORTS = (  # 指定导入的任务模块
 )
 
 # 定时任务
-CELERY_SCHEDULE = {
+CELERYBEAT_SCHEDULE = {
     'add-every-1-minute': {
         'task': 'tasks.tasks.task1',
         'schedule': crontab(minute="*/1"),
