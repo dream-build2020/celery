@@ -9,8 +9,7 @@ CELERY_TIMEZONE = 'Asia/Shanghai'  # 指定时区，默认是 UTC
 CELERY_ENABLE_UTC = False
 
 CELERY_IMPORTS = (  # 指定导入的任务模块
-    'celery_app.task1',
-    'celery_app.task2'
+    'tasks.tasks.task1'
 )
 
 # 定时任务
